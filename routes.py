@@ -20,7 +20,7 @@ s = json.load(open("./static/bmh_matplotlibrc.json"))
 matplotlib.rcParams.update(s)
 
 x = range(100)
-y = [a * 2 + random.randint(-20, 20) for a in x]
+y = np.sin(x)
 
 pie_fracs = [20, 30, 40, 10]
 pie_labels = ["A", "B", "C", "D"]
